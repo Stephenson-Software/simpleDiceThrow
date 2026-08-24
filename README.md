@@ -29,9 +29,7 @@ The prompt also advertises a `QUIT` option, but no branch implements it — typi
 
 ## Known issues
 
-The die is currently rolled with an inclusive upper bound of 7 rather than 6, so a `7` can come up. Under `hundred`, such a roll matches none of the six tally branches and is left out of the printed statistics, which is why those six totals can add up to fewer than 100. This is tracked in [issue #1](https://github.com/Stephenson-Software/simpleDiceThrow/issues/1).
-
-Further open items are listed on the [issue tracker](https://github.com/Stephenson-Software/simpleDiceThrow/issues).
+Open items are listed on the [issue tracker](https://github.com/Stephenson-Software/simpleDiceThrow/issues).
 
 ## License
 
