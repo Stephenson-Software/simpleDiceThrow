@@ -5,7 +5,7 @@ class Dice(object):
 		"New Dice Created!\n"
 		
 	def rollDice(self):
-		self.number = (randint(1, 7))
+		self.number = (randint(1, 6))
 		return self.number
 
 		
@@ -48,7 +48,7 @@ elif next == "hundred":
 	print "There were %d threes" % threes
 	print "There were %d fours" % fours
 	print "There were %d fives" % fives
-	print "There were %d six" % sixes
+	print "There were %d sixes" % sixes
 	
 else:
 	print "That wasn't an option silly!"
