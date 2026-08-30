@@ -23,7 +23,7 @@ Input is lowercased before it is compared, so `ONCE` and `once` are equivalent.
 |-------|----------|
 | `once` | Rolls the die a single time and prints the result. |
 | `hundred` | Rolls the die one hundred times, then prints how many times each of the faces 1 through 6 came up. |
-| anything else | Prints `That wasn't an option silly!` and exits. |
+| anything else | Prints `That wasn't an option silly! Try ONCE or HUNDRED.` and exits. |
 
 The prompt also advertises a `QUIT` option, but no branch implements it — typing `quit` currently takes the "anything else" path above. This is tracked in [issue #2](https://github.com/Stephenson-Software/simpleDiceThrow/issues/2).
 
