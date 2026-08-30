@@ -51,6 +51,6 @@ elif next == "hundred":
 	print "There were %d sixes" % sixes
 	
 else:
-	print "That wasn't an option silly!"
+	print "That wasn't an option silly! Try ONCE or HUNDRED."
 	
 raw_input("\nPress Enter to exit the program.")
