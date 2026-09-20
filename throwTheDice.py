@@ -19,8 +19,7 @@ if next == "once":
 elif next == "hundred":
 	times = []
 	for x in xrange(0,100):
-		myDice.rollDice()
-		times.append(myDice.number)
+		times.append(myDice.rollDice())
 
 	ones = 0
 	twos = 0
