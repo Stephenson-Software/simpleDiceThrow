@@ -10,15 +10,15 @@ class Dice(object):
 
 		
 myDice = Dice()
-print "A six sided dice lays next to you. (ONCE to roll once, HUNDRED to roll a hundred times, QUIT to quit)"
-next = raw_input("> ").lower()
+print("A six sided dice lays next to you. (ONCE to roll once, HUNDRED to roll a hundred times, QUIT to quit)")
+next = input("> ").lower()
 	
 if next == "once":
-	print myDice.rollDice()
+	print(myDice.rollDice())
 	
 elif next == "hundred":
 	times = []
-	for x in xrange(0,100):
+	for x in range(0,100):
 		times.append(myDice.rollDice())
 
 	ones = 0
@@ -42,14 +42,14 @@ elif next == "hundred":
 		elif num == 6:
 			sixes = sixes + 1
 
-	print "There were %d ones" % ones
-	print "There were %d twos" % twos
-	print "There were %d threes" % threes
-	print "There were %d fours" % fours
-	print "There were %d fives" % fives
-	print "There were %d sixes" % sixes
+	print("There were %d ones" % ones)
+	print("There were %d twos" % twos)
+	print("There were %d threes" % threes)
+	print("There were %d fours" % fours)
+	print("There were %d fives" % fives)
+	print("There were %d sixes" % sixes)
 	
 else:
-	print "That wasn't an option silly! Try ONCE or HUNDRED."
+	print("That wasn't an option silly! Try ONCE or HUNDRED.")
 	
-raw_input("\nPress Enter to exit the program.")
+input("\nPress Enter to exit the program.")

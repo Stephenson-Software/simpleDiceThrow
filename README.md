@@ -4,13 +4,13 @@ Lets you throw a dice once or a hundred times and then gives you the statistics.
 
 ## Requirements
 
-- **Python 2** — the script uses `print` as a statement, `raw_input`, and `xrange`, none of which are valid in Python 3. Running it under a Python 3 interpreter fails immediately with a `SyntaxError`.
+- **Python 3**. (It was written for Python 2 and ported to Python 3 when it was put in the browser.)
 - No third-party packages. The only import is `randint` from the standard library's `random` module.
 
 ## Running
 
 ```
-python2 throwTheDice.py
+python3 throwTheDice.py
 ```
 
 The program prints a prompt, reads a single line of input, acts on it, and then waits for Enter before exiting.
@@ -30,6 +30,14 @@ The prompt also advertises a `QUIT` option, but no branch implements it — typi
 ## Known issues
 
 Open items are listed on the [issue tracker](https://github.com/Stephenson-Software/simpleDiceThrow/issues).
+
+## Play in your browser
+The same game, unmodified, runs in a browser tab under [tak](https://github.com/Stephenson-Software/tak)'s console runtime (Python via Pyodide): https://dice.play.danielstephenson.dev, listed with the rest at [danielstephenson.dev/play](https://danielstephenson.dev/play). To build and serve it locally (needs `tak` installed):
+```
+python3 web/build_zip.py
+python3 -c "from tak.web.serve import main; main(root='.', title='Simple Dice Throw')"
+```
+Pushes to `master` deploy it to [arcade](https://github.com/Stephenson-Software/arcade) (`.github/workflows/browser.yml`).
 
 ## License
 
