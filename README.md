@@ -1,5 +1,7 @@
 # simpleDiceThrow
 
+[![Play in your browser](https://img.shields.io/badge/Play-in%20your%20browser-2ea44f)](https://danielstephenson.dev/play/simple-dice-throw)
+
 Lets you throw a dice once or a hundred times and then gives you the statistics.
 
 ## Requirements
